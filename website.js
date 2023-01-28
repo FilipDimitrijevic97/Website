@@ -14,5 +14,26 @@ links.forEach(link => {
         section.scrollIntoView({
             behavior: 'smooth'
         });
+        // Add class active to the current link
+        links.forEach(link => link.classList.remove('active'));
+        link.classList.add('active');
     });
 });
+
+// Add active class to the current section when user scrolls
+const sections = document.querySelectorAll('main section');
+window.addEventListener('scroll', e => {
+    const currentPosition = window.scrollY + (window.innerHeight / 2);
+    sections.forEach(section => {
+        if (currentPosition > section.offsetTop && currentPosition < (section.offsetTop + section.offsetHeight)) {
+            links.forEach(link => {
+                if (link.getAttribute('href') === `#${section.id}`) {
+                    link.classList.add('active');
+                } else {
+                    link.classList.remove('active');
+                }
+            });
+        }
+    });
+});
+
