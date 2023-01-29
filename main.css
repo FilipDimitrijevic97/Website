@@ -201,4 +201,14 @@ footer {
       .timeline-item .timeline-description p {
         margin-top: 5px;
       }
-      
+
+      .timeline-item:hover .timeline-description {
+        transform: scale(1.05);
+        transition: transform 0.3s ease-out;
+        }
+        
+        .timeline-item:hover .timeline-year {
+        display: block;
+        transform: translateY(-50%) scale(1.05);
+        transition: transform 0.3s ease-out;
+        }
