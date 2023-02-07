@@ -8,3 +8,4 @@ Here's what you can expect to discover on this site:
 - A portfolio of cool projects I've worked on 💻, complete with code snippets and screenshots
 
 So sit back, relax, and let's explore the world of technology together! 🚀 And don't forget to have a great day! 🌞
+
